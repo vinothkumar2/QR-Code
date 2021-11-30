@@ -1,5 +1,5 @@
 # QR Code
-A QR code generator python module
+A QR code generator and decoder python module
 
 ---
 
