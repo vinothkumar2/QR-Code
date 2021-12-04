@@ -5,8 +5,10 @@ from pyzbar.pyzbar import decode
 
 
 select_text = """Select an option
+
 [1] QR Code decode
 [2] QR Code encode
+
 Enter option number :- """
 
 
