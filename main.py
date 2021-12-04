@@ -13,7 +13,11 @@ Enter option number :- """
 
 
 def qr_decode():
+    
+    # receive path
     path = input("Enter image path")
+    
+    # works
     try:
         qr_text_data = decode(Image.open(path))
         qr_text_list = list(qr_text_data[0])
@@ -25,16 +29,23 @@ def qr_decode():
 
 
 def qr_encode():
+    
+    # recieve link and file name
     text = input("Enter link :- ")
     name = input("Enter file name :- ")
+    
+    # works
     qr_code = create(text)
     qr_code.png(name + '.png', scale=6)
     image = name + '.png'
+    
     return image
 
 
 def main():
+    
     option = input(select_text)
+    
     if option == "1":
         print(qr_decode())
     elif option == "2":
